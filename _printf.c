@@ -33,6 +33,8 @@ case 'X':
 return (print_hex(va_arg(args, unsigned long int), 1));
 case 'S':
 return (print_S(va_arg(args, char *)));
+case 'r':
+return (print_reversed(va_arg(args, char *)));
 default:
 return (character_print('%') + character_print(specifier));
 }
